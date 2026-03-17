@@ -10,6 +10,7 @@
 | 自如 | ziroom.com | 长租公寓、装修标准统一、服务有保障 | ⭐⭐⭐⭐ |
 | 我爱我家 | bj.5i5j.com | 北京本地老牌中介、房源覆盖广 | ⭐⭐⭐ |
 | 房天下 | zu.fang.com | 综合平台、房源量大 | ⭐⭐⭐ |
+| 豆瓣租房小组 | douban.com/group/35417 | 个人房东/转租为主、无中介费、信息真实但更新不稳定 | ⭐⭐⭐ |
 
 ## 搜索策略
 
@@ -34,6 +35,19 @@
 - 链家太阳宫：`https://bj.lianjia.com/zufang/taiyanggong/`
 - 安居客太阳宫：`https://bj.zu.anjuke.com/fangyuan/chaoyang-q-taiyanggong/`
 - 58同城太阳宫整租：`https://bj.58.com/taiyanggong/zufang/`
+- 豆瓣北京租房小组（最新）：`https://www.douban.com/group/35417/discussion?start=0&type=new`
+
+**豆瓣小组抓取说明**：
+- 豆瓣无需登录即可抓取帖子列表，包含标题、发帖人、发帖时间
+- 该小组为全北京范围，西坝河/太阳宫等特定区域帖子较少，需从标题关键词筛选
+- 抓取后过滤包含目标区域关键词的帖子（如"西坝河"、"太阳宫"、"芍药居"）
+- 好房源更新快，建议优先看当天或近 3 天内的帖子
+- 若列表页帖子不含目标区域，补充用搜索引擎检索：
+  ```
+  site:douban.com/group [区域] 租房 合租
+  ```
+  或直接访问豆瓣搜索：
+  `https://www.douban.com/search?cat=1013&q=[区域]+租房`
 
 ### 第三步：手动粘贴（前两步失败时）
 若平台有反爬限制导致信息获取不完整，提示用户：
